@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import ToDoItems from "./ToDoItems";
+import "./ToDoList.css";
 class ToDoList extends Component{
     constructor (props)
     {
@@ -33,7 +34,10 @@ class ToDoList extends Component{
     render(){
         return(
             <div className="todoListMain">
-                <div className="header">
+                <div className="listHeader">
+                    <header className = "head">
+                        The List
+                    </header>
                     <form onSubmit={this.addItem}>
                         <input ref = {(a) => this._inputElement = a}
                             placeholder="enter task">
