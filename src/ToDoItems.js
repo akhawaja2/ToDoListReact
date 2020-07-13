@@ -17,10 +17,6 @@ class ToDoItems extends Component {
             
     }
 
-   // removeTasks(item)
-   // {
-    //    return <button onClick = {() => removeItem({key: item.key})}>Remove Task</button>
-   // }
     render() {
         var toDoEntries = this.props.entries;
         var listItems = toDoEntries.map(this.createTasks);
